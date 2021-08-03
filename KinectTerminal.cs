@@ -364,9 +364,9 @@ namespace KinectTerminal
                 foreach ( var skeleton in skeletonList){
 
                     if(skeletonList.IndexOf(skeleton)==0){
-                         absX = skeleton.xJoints[1].X;
-                         absY = skeleton.xJoints[1].Y;
-                         absZ = skeleton.xJoints[1].Z;
+                         x = skeleton.xJoints[1].X;
+                         y = skeleton.xJoints[1].Y;
+                         z = skeleton.xJoints[1].Z;
                     }else{
                         var diffX = skeleton.xJoints[1].X;
                         var diffY = skeleton.xJoints[1].Y;
